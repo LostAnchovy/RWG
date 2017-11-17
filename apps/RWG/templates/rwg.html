@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Random Word Generator</title>
+<style>
+	#wrapper{
+		width: 960px;
+		text-align: center;
+		margin: auto 0px;
+	}
+	#random{
+	border: thin solid grey;
+	width: 450px;
+	margin-left: 245px;
+	padding: 10px;
+	}
+	button{
+		margin-top: 10px;
+		color: blue
+	}
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<h1>Random Word #(attempts{{counter}})</h1>
+	<div id ="random">
+		{{random_gen}}
+	{% csrf_token %}
+	<a href="/generate"><button>generate</button></a>
+	<a href="/reset"><button>clear</button></a>
+	
+	</form>
+			
+		
+	</div>
+	
+	
+</div>
+</body>
+</html>
